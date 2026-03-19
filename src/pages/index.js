@@ -110,15 +110,15 @@ export default function Home() {
           <div>
             <div className="section-heading">
               <span className="eyebrow">Partners</span>
-              <h2>Grren Silicon Valley</h2>
+              <h2>Green Silicon Valley</h2>
             </div>
             <p>
-              We’re proud to work with Grren Silicon Valley—one of our
-              partners in bringing financial education and youth empowerment
-              to more communities.
+              We’re proud to work with Green Silicon Valley—one of our partners
+              in bringing financial education and youth empowerment to more
+              communities.
             </p>
             <p>
-              Together, we’re hosting workshops with Grren Silicon Valley
+              Together, we’re hosting workshops with Green Silicon Valley
               internationally, helping spark conversations and build confidence
               around money skills worldwide.
             </p>
