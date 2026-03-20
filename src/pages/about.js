@@ -13,7 +13,9 @@ export default function About() {
             Loop Life is a student-led, Instagram-based nonprofit committed to
             raising awareness about financial illiteracy through handcrafted
             bracelets. Every purchase fuels financial education, with 100% of
-            proceeds supporting the Young Investors Society. We believe in
+            proceeds supporting the Young Investors Society. We also host
+            financial literacy workshops with partners like Green Silicon Valley,
+            bringing hands-on learning to more communities. We believe in
             empowering the next generation with the knowledge and tools to build
             a secure financial future—one loop at a time.
           </p>
@@ -49,6 +51,11 @@ export default function About() {
               organization dedicated to equipping youth with real-world
               financial skills. Our loops are more than accessories. They are
               symbols of empowerment, awareness, and change.
+            </p>
+            <p>
+              Beyond our shop, we co-host workshops—in collaboration with
+              organizations like Green Silicon Valley—that give young people a
+              space to build money skills and confidence in real time.
             </p>
             <p>
               At Loop Life, we believe that financial literacy is a right, not a

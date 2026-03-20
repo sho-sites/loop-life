@@ -122,6 +122,13 @@ export default function Home() {
               internationally, helping spark conversations and build confidence
               around money skills worldwide.
             </p>
+            <p>
+              Interested in joining a workshop? Email us at{" "}
+              <u>
+                <a href="mailto:loop.life16@gmail.com">loop.life16@gmail.com</a>
+              </u>
+              .
+            </p>
           </div>
 
           <div className="card list-card">
@@ -129,6 +136,10 @@ export default function Home() {
             <p className="muted">
               Partner-supported sessions that turn knowledge into action—one
               loop at a time.
+            </p>
+            <p className="muted">
+              Want to join?{" "}
+              <a href="mailto:loop.life16@gmail.com">loop.life16@gmail.com</a>
             </p>
             <div className="badge">International workshops</div>
           </div>
