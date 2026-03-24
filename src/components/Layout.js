@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 const navLinks = [
@@ -15,6 +16,11 @@ const socials = [
 
 function Header() {
   const { pathname } = useRouter();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header className="navbar">
@@ -23,7 +29,7 @@ function Header() {
           Loop Life
         </Link>
 
-        <nav className="nav-links">
+        <nav className="nav-links desktop-nav" aria-label="Primary">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -35,10 +41,44 @@ function Header() {
           ))}
         </nav>
 
-        <Link href="/buy" className="button primary small">
+        <Link href="/buy" className="button primary small desktop-cta">
           Shop Bracelets
         </Link>
+
+        <button
+          type="button"
+          className="menu-toggle"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMenuOpen}
+          aria-controls="mobile-menu"
+          onClick={() => setIsMenuOpen((open) => !open)}
+        >
+          <span className="menu-toggle-line" />
+          <span className="menu-toggle-line" />
+          <span className="menu-toggle-line" />
+        </button>
       </div>
+
+      {isMenuOpen && (
+        <div id="mobile-menu" className="mobile-menu">
+          <div className="container mobile-menu-inner">
+            <nav className="mobile-nav-links" aria-label="Mobile primary">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`nav-link${pathname === link.href ? " active" : ""}`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+            <Link href="/buy" className="button primary small mobile-cta">
+              Shop Bracelets
+            </Link>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

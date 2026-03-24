@@ -44,7 +44,6 @@ export default function Home() {
           </div>
 
           <div className="hero-visual">
-            <div className="badge">Supports Young Investors Society</div>
             <div>
               <h3>Designed for impact</h3>
               <p className="muted">
@@ -52,6 +51,7 @@ export default function Home() {
                 and meaningful change.
               </p>
             </div>
+            <div className="badge">Supports Young Investors Society</div>
           </div>
         </div>
       </section>
